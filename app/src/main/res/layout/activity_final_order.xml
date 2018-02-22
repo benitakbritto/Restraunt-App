@@ -1,0 +1,59 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="BILL"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:id="@+id/Bill" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listt"
+
+        android:layout_below="@+id/Bill"
+        android:layout_above="@+id/subTotal">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subTotal"
+        android:textColor="#FFFFFF"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:layout_above="@+id/tax"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tax"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/grandTotal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grandTotal"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_above="@+id/paymentFinal"
+       />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROCEED TO PAYMENT"
+        android:id="@+id/paymentFinal"
+        android:onClick="proceedPayment"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

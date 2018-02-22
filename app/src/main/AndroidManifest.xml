@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.restraunt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TableBooking" />
+        <activity android:name=".menu" />
+        <activity android:name=".StarterMenu" />
+        <activity android:name=".mainCourseMenu" />
+        <activity android:name=".dessertMenu" />
+        <activity android:name=".billprint_mainCourse" />
+        <activity android:name=".billprint_starter" />
+        <activity android:name=".billprint_dessert" />
+        <activity android:name=".finalOrder" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".verify_payment" />
+        <activity android:name=".login" />
+        <activity android:name=".Redirect"></activity>
+    </application>
+
+</manifest>
